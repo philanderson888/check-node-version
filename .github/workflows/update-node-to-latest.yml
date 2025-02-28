@@ -13,4 +13,4 @@ jobs:
       - run: pwd
       - run: ls
       - run: chmod +x test/update-node-to-latest.sh
-      - run: /test/update-node-to-latest.sh
+      - run: test/update-node-to-latest.sh
