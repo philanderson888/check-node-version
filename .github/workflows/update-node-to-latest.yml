@@ -11,5 +11,7 @@ jobs:
           node-version: '22.14.0'
       - run: echo ${{ github.actor }} 
       - run: pwd
-      - run: ls
+      - run: ls -lah
+      - run: chmod +x ./update-node-to-latest.sh
+      - run: ls -lah
       - run: ./update-node-to-latest.sh
