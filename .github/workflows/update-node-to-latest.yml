@@ -10,3 +10,5 @@ jobs:
         with:
           node-version: '22.14.0'
       - run: echo ${{ github.actor }} 
+      - run: pwd
+      - run: ls
