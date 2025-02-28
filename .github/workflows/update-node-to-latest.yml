@@ -1,0 +1,12 @@
+name: update-node-to-latest
+run-name: update-node-to-latest
+on: [push]
+jobs:
+  update-node-to-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+      - run: echo ${{ github.actor }} 
