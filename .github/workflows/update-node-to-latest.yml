@@ -12,5 +12,5 @@ jobs:
       - run: echo ${{ github.actor }} 
       - run: pwd
       - run: ls
-      - run: chmod +x update-node-to-latest.sh
-      - run: update-node-to-latest.sh
+      - run: chmod +x test/update-node-to-latest.sh
+      - run: /test/update-node-to-latest.sh
